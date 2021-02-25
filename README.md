@@ -1,34 +1,200 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+<h1 align="center">
+    💪  Moveit
+</h1>
+
+<h3 align="center">
+     Seu pomodoro pra exercicíos, ideal para quem passa diversas horas em frente ao computador. 
+</h3>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/arthrrc/moveit?color=%2304D361">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arthrrc/moveit">
+
+  <a href="https://www.twitter.com/arthrrc/">
+    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Farthrrc%2Fmoveit">
+  </a>
+  
+  <a href="https://github.com/arthrrc/moveit/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arthrrc/moveit">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+   <a href="https://github.com/arthrrc/moveit/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/arthrrc/moveit?style=social">
+  </a>
+  
+ 
+</p>
+
+<h4 align="center">
+	🚧   Episódios 1/5 🚀 🚧
+</h4>
+
+Tabela de conteúdos
+=================
+<!--ts-->
+   * [Sobre o projeto](#-sobre-o-projeto)
+   * [Funcionalidades](#-funcionalidades)
+   * [Layout](#-layout)
+     * [Web](#web)
+   * [Como executar o projeto](#-como-executar-o-projeto)
+     * [Pré-requisitos](#pré-requisitos)
+     * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
+     * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
+   * [Tecnologias](#-tecnologias)
+   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
+   * [Autor](#-autor)
+<!--te-->
+
+
+## 💻 Sobre o projeto
+
+💪  Moveit - é uma forma de motivar as pessoas a fazerem exercícios enquanto trabalham ou jogam. Funcioando estilo um pomodoro, promovendo desafios para que o usuário não fique totalmente parado.
+
+
+Projeto desenvolvido durante a **NLW - Next Level Week** oferecida pela [Rocketseat](https://nextlevelweek.com/episodios/react/1/edicao/4).
+O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
+
+---
+
+## ⚙️ Funcionalidades
+
+- [ ] Os usuários pode se cadastrar na aplicação usando
+  - [ ] uma imagem escolhida pelo usuário
+  - [ ] nome do usuário e email
+
+- [ ] Os usuários podem iniciar um ciclo, escolhendo a cronometragem do mesmo (vindo by default 25min) 
+- [ ] Os usuários podem abandonar o ciclo atual
+- [ ] Os usuários tem uma barra de experiência onde
+  - [ ] Eles podem upar de nível ao alcançar a quantidade de experiência desejada
+    - [ ] Ao upar de nível, eles recebem um parabéns pela aplicação
+    - [ ] Eles podem compartilhar isso nas redes sociais usando uma imagem gerada automaticamente
+  - [ ] Os usuários, ao final de cada ciclo, recebem um desafio que ao concluido o da certas quantidades de experiência
+- [ ] Os usuários podem ver o histórico de desafios concluidos
+
+---
+
+## 🎨 Layout
+
+O layout da aplicação está disponível no Figma:
+
+<a href="https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0/">
+  <img alt="Made by @tiagoluchtenberg" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
+</a>
+
+---
+
+## 🚀 Como executar o projeto
+
+Este projeto é divido em três partes:
+1. Backend (pasta server) 
+2. Frontend (pasta web)
+
+💡O Frontend precisa que o Backend esteja sendo executado para funcionar.
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### 🎲 Rodando o Backend (servidor)
 
 ```bash
-npm run dev
-# or
-yarn dev
+
+# Clone este repositório
+$ git clone git@github.com:arthrrc/moveit.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd moveit
+
+# Vá para a pasta server
+$ cd server
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev:server
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 🧭 Rodando a aplicação web (Frontend)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Clone este repositório
+$ git clone git@github.com:arthrrc/moveit.git
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd moveit
 
-## Learn More
+# Vá para a pasta da aplicação Front End
+$ cd web
 
-To learn more about Next.js, take a look at the following resources:
+# Instale as dependências
+$ npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+<!--   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Axios](https://github.com/axios/axios)**
+-   **[Leaflet](https://react-leaflet.js.org/en/)**
+-   **[React Leaflet](https://react-leaflet.js.org/)**
+-   **[React Dropzone](https://github.com/react-dropzone/react-dropzone)**
+
+> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json)
+
+#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+-   **[Express](https://expressjs.com/)**
+-   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
+-   **[KnexJS](http://knexjs.org/)**
+-   **[SQLite](https://github.com/mapbox/node-sqlite3)**
+-   **[ts-node](https://github.com/TypeStrong/ts-node)**
+-   **[dotENV](https://github.com/motdotla/dotenv)**
+-   **[Multer](https://github.com/expressjs/multer)**
+-   **[Celebrate](https://github.com/arb/celebrate)**
+-   **[Joi](https://github.com/hapijs/joi)**
+
+> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/server/package.json)
+
+-->
+
+#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
+
+-   Protótipo:  **[Figma](https://www.figma.com/)**  →  **[Protótipo (Ecoleta)](https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  
+-   Teste de API:  **[Insomnia](https://insomnia.rest/)**
+-   Fontes:  **[Inter](https://fonts.google.com/specimen/Inter)**,  **[Radjhani](https://fonts.google.com/specimen/Rajdhani)**
+
+
+---
+
+## 💪 Como contribuir no projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
+
+Feito com ❤️ por Arthur Castilhos 👋 [Entre em contato!](https://www.linkedin.com/in/arthrc/)
