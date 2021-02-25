@@ -9,21 +9,20 @@
 </h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/arthrrc/moveit?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/arthrrc/moveitNextjs?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arthrrc/moveit">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arthrrc/moveitNextjs">
 
   <a href="https://www.twitter.com/arthrrc/">
-    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Farthrrc%2Fmoveit">
+    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Farthrrc%2FmoveitNextjs">
   </a>
   
   <a href="https://github.com/arthrrc/moveit/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arthrrc/moveit">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arthrrc/moveitNextjs">
   </a>
     
-   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
    <a href="https://github.com/arthrrc/moveit/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/arthrrc/moveit?style=social">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/arthrrc/moveitNextjs?style=social">
   </a>
   
  
