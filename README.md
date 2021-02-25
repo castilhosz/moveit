@@ -30,7 +30,7 @@
 </p>
 
 <h4 align="center">
-	🚧   Episódios 1/5 🚀 🚧
+	🚧   Episódios 2/5 🚀 🚧
 </h4>
 
 Tabela de conteúdos
