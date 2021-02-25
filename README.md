@@ -41,7 +41,6 @@ Tabela de conteúdos
      * [Web](#web)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
-     * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
      * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
    * [Tecnologias](#-tecnologias)
    * [Como contribuir no projeto](#-como-contribuir-no-projeto)
@@ -100,39 +99,16 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-#### 🎲 Rodando o Backend (servidor)
-
-```bash
-
-# Clone este repositório
-$ git clone git@github.com:arthrrc/moveit.git
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd moveit
-
-# Vá para a pasta server
-$ cd server
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-
-```
 
 #### 🧭 Rodando a aplicação web (Frontend)
 
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:arthrrc/moveit.git
+$ git clone git@github.com:arthrrc/moveitNextjs.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd moveit
-
-# Vá para a pasta da aplicação Front End
-$ cd web
+$ cd moveitNextjs
 
 # Instale as dependências
 $ npm install
