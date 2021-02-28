@@ -64,13 +64,12 @@ O NLW é uma experiência online com muito conteúdo prático, desafios e hacks 
   - [ ] uma imagem escolhida pelo usuário
   - [ ] nome do usuário e email
 
-- [X] Os usuários podem iniciar um ciclo, escolhendo a cronometragem do mesmo (vindo by default 25min) 
-- [ ] Os usuários podem abandonar o ciclo atual
-- [ ] Os usuários tem uma barra de experiência onde
-  - [ ] Eles podem upar de nível ao alcançar a quantidade de experiência desejada
-    - [ ] Ao upar de nível, eles recebem um parabéns pela aplicação
-    - [ ] Eles podem compartilhar isso nas redes sociais usando uma imagem gerada automaticamente
-  - [ ] Os usuários, ao final de cada ciclo, recebem um desafio que ao concluido o da certas quantidades de experiência
+- [X] Os usuários podem iniciar um ciclo (vindo by default 25min) 
+- [X] Os usuários podem abandonar o ciclo atual
+- [X] Os usuários tem uma barra de experiência onde
+  - [X] Eles podem upar de nível ao alcançar a quantidade de experiência desejada
+    - [X] Ao upar de nível, eles recebem um parabéns pela aplicação
+  - [X] Os usuários, ao final de cada ciclo, recebem um desafio que ao concluido o da certas quantidades de experiência
 - [ ] Os usuários podem ver o histórico de desafios concluidos
 
 ---
