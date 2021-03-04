@@ -29,7 +29,7 @@
 </p>
 
 <h4 align="center">
-	🚧   Episódios 2/5 🚀 🚧
+	🚧   Episódios 5/5 🚀 🚧
 </h4>
 
 Tabela de conteúdos
@@ -86,11 +86,7 @@ O layout da aplicação está disponível no Figma:
 
 ## 🚀 Como executar o projeto
 
-Este projeto é divido em três partes:
-1. Backend (pasta server) 
-2. Frontend (pasta web)
-
-💡O Frontend precisa que o Backend esteja sendo executado para funcionar.
+Este projeto é completamente Frontend (pasta web).
 
 ### Pré-requisitos
 
