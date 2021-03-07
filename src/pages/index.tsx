@@ -10,6 +10,8 @@ import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
 import styles from '../styles/pages/Home.module.css'
+import { UsernameContext } from '../contexts/UsernameContext';
+import { useContext } from 'react';
 
 interface HomeProps {
   level: number;
@@ -18,6 +20,9 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
+  const { username } = useContext(UsernameContext)
+  console.log(username)
+
   return ( 
     <ChallengesProvider
     level={props.level}
@@ -29,7 +34,7 @@ export default function Home(props: HomeProps) {
         <title>Início | move.it</title>
       </Head>
       <ExperienceBar/>
-
+      <h1>Username: {username}</h1>
       <CountdownProvider>
       <section>
         <div>
