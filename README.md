@@ -38,22 +38,20 @@ Table of contents
    * [About the project](#-about-the-project)
    * [Functionalities](#-functionalities)
    * [Layout](#-layout)
-   * [Como executar o projeto](#-How-to-execute-the-project)
-     * [Pré-requisitos](#Prerequisites)
-     * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
-   * [Tecnologias](#-tecnologias)
-   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
-   * [Autor](#-autor)
+   * [How to execute the project](#-How-to-execute-the-project)
+     * [Prerequisites](#Prerequisites)
+     * [Running the application](#user-content--running-the-application)
+   * [How to contribute to the project ](#-how-to-contribute-to-the-project)
 <!--te-->
 
 
 ## 💻 About the project
 
-💪  Moveit - é uma forma de motivar as pessoas a fazerem exercícios enquanto trabalham ou jogam. Funcioando estilo um pomodoro, promovendo desafios para que o usuário não fique totalmente parado.
+💪  Moveit - is a way to motivate people to exercise while working or playing. Functioning like a pomodoro, promoting challenges so that the user is not totally stopped.
 
 
-Projeto desenvolvido durante a **NLW - Next Level Week** oferecida pela [Rocketseat](https://nextlevelweek.com/episodios/react/1/edicao/4).
-O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
+Project developed during ** NLW - Next Level Week ** offered by [Rocketseat](https://rocketseat.com.br/).
+NLW is an online experience with a lot of practical content, challenges and hacks where the content is available for a week. 
 
 ---
 
@@ -89,7 +87,7 @@ Before you start, you will need install in your PC these tools:
 In addition, it is good that you have a text editor to program like [VSCode](https://code.visualstudio.com/)
 
 
-#### 🧭 Running the web application  (Frontend)
+#### 🧭 Running the application
 
 ```bash
 
