@@ -101,7 +101,7 @@ $ cd moveitNextjs
 $ npm install
 
 # Run the application in development mode 
-$ npm run start
+$ npm run dev
 
 # The application will open on the door: 3000 - access http://localhost:3000
 
