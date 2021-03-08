@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link'
 import Head from 'next/head';
 
@@ -8,11 +8,11 @@ import styles from '../styles/pages/Login.module.css';
 
 export default function Login() {
   const { username, setUsername } = useUsername()
+  console.log(username);
 
   const handleChange = (e) => {
     e.preventDefault();
-    setUsername(e.target.value)
-    console.log(username)
+    setUsername(e.target.value);
   }
 
   return(
