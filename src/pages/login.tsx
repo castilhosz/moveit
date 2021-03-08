@@ -1,18 +1,19 @@
-import { useContext,  } from 'react';
+import React from 'react';
 import Link from 'next/link'
 import Head from 'next/head';
 
-import { UsernameContext } from '../contexts/UsernameContext';
+import { useUsername } from '../contexts/UsernameContext';
 
 import styles from '../styles/pages/Login.module.css';
 
 export default function Login() {
-  const {username, setUsername, handleChange} = useContext(UsernameContext)
+  const { username, setUsername } = useUsername()
 
-  /*const handleChange = (e) => {
+  const handleChange = (e) => {
     e.preventDefault();
-    registerUsername;
-  }*/
+    setUsername(e.target.value)
+    console.log(username)
+  }
 
   return(
     <div className={styles.container}>

@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useEffect, useState } from "react";
+import { createContext, ReactNode, useContext, useEffect, useState, Dispatch, SetStateAction } from "react";
 import Cookies from 'js-cookie';
 
 interface UsernameProviderProps {
@@ -7,23 +7,18 @@ interface UsernameProviderProps {
 
 interface UsernameContextData {
   username: string;
-  setUsername: (user: string) => void;
-  handleChange: (e: any) => void;
+  setUsername: Dispatch<SetStateAction<string>>
 }
 
-export const UsernameContext = createContext({} as UsernameContextData)
+const initialState = {
+  username: '',
+  setUsername(): void { return }
+}
+
+const UsernameContext = createContext(initialState as UsernameContextData)
 
 export function UsernameProvider({ children }: UsernameProviderProps) {
   const [username, setUsername] = useState('')
-
-  const handleChange = (e) => {
-    e.preventDefault();
-    try {
-      setUsername(e.target.username)
-    } catch (error) {
-      console.log('acendo puxa prende e solta')
-    }
-  }
 
   useEffect(() => {
     Cookies.set('username', String(username))
@@ -31,8 +26,18 @@ export function UsernameProvider({ children }: UsernameProviderProps) {
   }, [username])
 
   return (
-    <UsernameContext.Provider value={{username, setUsername, handleChange}}>
+    <UsernameContext.Provider 
+    value={{
+      username, setUsername
+      }}
+    >
       { children }
     </UsernameContext.Provider>
   )
 } 
+
+export function useUsername() {
+  const context = useContext(UsernameContext);
+  const { username, setUsername } = context;
+  return { username, setUsername };
+}
