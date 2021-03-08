@@ -20,8 +20,6 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
-  const { username } = useContext(UsernameContext)
-  console.log(username)
 
   return ( 
     <ChallengesProvider
@@ -34,7 +32,6 @@ export default function Home(props: HomeProps) {
         <title>Início | move.it</title>
       </Head>
       <ExperienceBar/>
-      <h1>Username: {username}</h1>
       <CountdownProvider>
       <section>
         <div>
