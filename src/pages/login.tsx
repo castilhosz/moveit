@@ -1,18 +1,34 @@
-import React, { useEffect } from 'react';
-import Link from 'next/link'
 import Head from 'next/head';
+import Router from 'next/router'
 
 import { useUsername } from '../contexts/UsernameContext';
+import { AccountDontExists } from '../components/AccountDontExists';
 
 import styles from '../styles/pages/Login.module.css';
 
 export default function Login() {
-  const { username, setUsername } = useUsername()
+  const { username, setUsername, usernameOnCookies, requestApi } = useUsername()
   console.log(username);
 
   const handleChange = (e) => {
     e.preventDefault();
     setUsername(e.target.value);
+  }
+
+  async function handleSubmit (e) {
+    e.preventDefault();
+
+    const url = `https://api.github.com/users/${username}`;
+    const response = await fetch(url);
+    const result = await response.json();
+
+    if(!result.login) {
+      alert('O usuário não foi encontrado')
+    } else {
+      usernameOnCookies();
+      requestApi();
+      Router.push('/');
+     }
   }
 
   return(
@@ -33,18 +49,16 @@ export default function Login() {
             <p>Faça login com seu Github para começar</p>
           </div>
           
-          <form>
+          <form onSubmit={handleSubmit}>
             <input 
             placeholder='Digite seu username'
             type='text'
             value={username}
             onChange={handleChange}
             />
-            <Link href='/'>
             <button type="submit">
               <img src="/icons/vector.svg" alt=""/>
             </button>
-            </Link>
           </form>
         </div>
       </section>
