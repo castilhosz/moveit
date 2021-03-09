@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Router from 'next/router'
 
 import { useUsername } from '../contexts/UsernameContext';
-import { AccountDontExists } from '../components/AccountDontExists';
 
 import styles from '../styles/pages/Login.module.css';
 
