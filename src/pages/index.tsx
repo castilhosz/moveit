@@ -7,7 +7,6 @@ import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengeContext';
 
 import Head from 'next/head';
-import { GetServerSideProps } from 'next';
 
 import styles from '../styles/pages/Home.module.css'
 
@@ -15,6 +14,8 @@ interface HomeProps {
   level: number;
   currentExperience: number;
   challengesCompleted: number;
+  username: string;
+  user: string;
 }
 
 export default function Home(props: HomeProps) {
@@ -29,11 +30,12 @@ export default function Home(props: HomeProps) {
         <title>Início | move.it</title>
       </Head>
       <ExperienceBar/>
-
       <CountdownProvider>
       <section>
         <div>
-          <Profile/>
+          <Profile
+          username={props.username}
+          user={props.user}/>
           <CompletedChallenges/>
           <Countdown/>
         </div>
@@ -48,14 +50,23 @@ export default function Home(props: HomeProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies
-  
+export const getServerSideProps = async (ctx) => {
+  const { level, currentExperience, challengesCompleted, username, user } = ctx.req.cookies
+  if (!username || !user) {
+    return {
+      redirect: {
+        destination: "/login"
+      }
+    }
+  }
+
   return{
     props: {
       level: Number(level),
       currentExperience: Number(currentExperience), 
-      challengesCompleted: Number(challengesCompleted)
+      challengesCompleted: Number(challengesCompleted),
+      username: String(username),
+      user: String(user),
     }
   }
 }

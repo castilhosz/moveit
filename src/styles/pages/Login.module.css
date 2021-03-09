@@ -1,0 +1,82 @@
+.container {
+  height: 100vh;
+  max-width: 100vw;
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  display: flex;
+
+  background: var(--blue);
+}
+
+.container section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  align-content: center;
+
+  
+  background-image: url('/simbolo.svg') ;
+  background-repeat: no-repeat;
+}
+
+.container section h1 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.git {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.git p {
+  color: var(--text-highlight);
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.rightContainer > img {
+  margin-bottom: 6rem;
+}
+
+.rightContainer > div {
+  margin-top: 1.75rem;
+}
+
+.rightContainer div p {
+  margin-left: 1rem;
+  max-width: 255px;
+}
+
+.container section form {
+  margin-top: 2.5rem;
+}
+
+.container section form input {
+  width: 100%;
+  height: 4rem;
+  max-width: 340px;
+  max-height: 80px;
+  border-radius: 5px;
+  border: 5px;
+  border-color: var(--blue-dark);
+  background: linear-gradient(to right, #4953B8, transparent);
+  color: var(--text-highlight);
+  padding-left: 1rem
+}
+
+.container section form input::placeholder {
+  color: var(--text-highlight);
+}
+
+.container section form button {
+  height: 4rem;
+  width: 4rem;
+  max-width: 80px;
+  max-height: 80px;
+  background: var(--blue-dark);
+  border: 0;
+  border-radius: 5px;
+}

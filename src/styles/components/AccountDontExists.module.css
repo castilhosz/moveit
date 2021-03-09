@@ -1,0 +1,14 @@
+.container {
+  position: absolute;
+  bottom: 90%;
+  left: 80%;
+  background-color: #911e1d;
+  width: 20rem;
+  height: 2.5rem;
+}
+
+.container p {
+  left: 50%;
+  color: var(--white);
+  font-weight: 600;
+}
