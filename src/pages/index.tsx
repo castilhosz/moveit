@@ -4,9 +4,11 @@ import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { ChallengeBox } from '../components/ChallengeBox';
 import { CountdownProvider } from '../contexts/CountdownContext';
-import { ChallengesProvider } from '../contexts/ChallengeContext';
+import { ChallengesProvider } from '../contexts/ChallengeContext';  
+import { useUsername } from '../contexts/UsernameContext';
 
 import Head from 'next/head';
+import { FiLogOut } from 'react-icons/fi';
 
 import styles from '../styles/pages/Home.module.css'
 
@@ -19,6 +21,14 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
+  const { removeUsername } = useUsername();
+  
+  function logout () {
+    window.confirm('Você realmente gostaria de deslogar?') &&
+    removeUsername()
+    window.location.reload();
+  }
+
   return ( 
     <ChallengesProvider
     level={props.level}
@@ -29,7 +39,11 @@ export default function Home(props: HomeProps) {
       <Head>
         <title>Início | move.it</title>
       </Head>
+
       <ExperienceBar/>
+      <button onClick={logout}>
+        <FiLogOut/>
+      </button>
       <CountdownProvider>
       <section>
         <div>
