@@ -24,7 +24,7 @@
 
 First off, we would like to thank you for taking the time to contribute and make this a better project!
 
-Here we have a set of instructions and guidelines to reduce misunderstandings and make the process of contributing to `unform` as smooth as possible.
+Here we have a set of instructions and guidelines to reduce misunderstandings and make the process of contributing to `move.it` as smooth as possible.
 
 We hope this guide makes the contribution process clear and answers any questions you may have.
 
@@ -50,7 +50,7 @@ Here are some ways you can help along with some guidelines.
 
 ### Documentation
 
-As a user of `unform`, you're the perfect candidate to help us improve our documentation!
+As a user of `move.it`, you're the perfect candidate to help us improve our documentation!
 
 Typos, errors, lack of examples and/or explanation and so on, are just some examples of things that could be fixed and/or improved.
 
