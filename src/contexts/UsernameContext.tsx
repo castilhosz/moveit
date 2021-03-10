@@ -3,33 +3,40 @@ import Cookies from 'js-cookie';
 
 interface UsernameProviderProps {
   children: ReactNode
-}
+};
 
 interface UsernameContextData {
   username: string;
   setUsername: Dispatch<SetStateAction<string>>
   user: string;
   usernameOnCookies(): void;
+  removeUsername(): void;
   requestApi(): void;
-}
+};
 
 const initialState = {
   username: '',
   user: '',
   usernameOnCookies(): void {},
+  removeUsername(): void {},
   requestApi(): void {},
   setUsername(): void { return }
-}
+};
 
-const UsernameContext = createContext(initialState as UsernameContextData)
+const UsernameContext = createContext(initialState as UsernameContextData);
 
 export function UsernameProvider({ children }: UsernameProviderProps) {
-  const [username, setUsername] = useState('')
-  const [user, setUser] = useState('')
+  const [username, setUsername] = useState('');
+  const [user, setUser] = useState('');
 
   function usernameOnCookies () {
-    Cookies.set('username', String(username))
+    Cookies.set('username', String(username));
     Cookies.set('user', String(user));
+  };
+
+  function removeUsername () {
+    Cookies.remove('username');
+    Cookies.remove('user');
   };
 
   async function requestApi() {
@@ -38,7 +45,7 @@ export function UsernameProvider({ children }: UsernameProviderProps) {
     const result = await response.json();
 
     setUser(result.name);
-  }
+  };
 
   return (
     <UsernameContext.Provider 
@@ -47,13 +54,14 @@ export function UsernameProvider({ children }: UsernameProviderProps) {
       setUsername, 
       usernameOnCookies,
       user, 
-      requestApi
+      requestApi,
+      removeUsername
       }}
     >
       { children }
     </UsernameContext.Provider>
-  )
-} 
+  );
+};
 
 export function useUsername() {
   const context = useContext(UsernameContext);
@@ -62,7 +70,8 @@ export function useUsername() {
     setUsername, 
     usernameOnCookies,
     user,
-    requestApi 
+    requestApi,
+    removeUsername
   } = context;
-  return { username, setUsername, usernameOnCookies, user, requestApi };
-}
+  return { username, setUsername, usernameOnCookies, user, requestApi, removeUsername };
+};
