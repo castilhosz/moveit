@@ -16,9 +16,3 @@
   gap: 6.25rem;
   align-content: center;
 }
-
-.container > button {
-  position: absolute;
-  border: 0;
-  right: 32.5rem;
-}

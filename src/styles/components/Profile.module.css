@@ -27,3 +27,14 @@
 .profileContainer div p img {
   margin-right: 0.5rem;
 }
+
+.profileContainer > div > button {
+  border: 0;
+  margin-left: 1rem;
+}
+
+@media(max-width:1080px) {
+  .profileContainer > div > button {
+    margin-left: 0.3rem;
+  }
+}
