@@ -57,7 +57,7 @@ NLW is an online experience with a lot of practical content, challenges and hack
 
 ## ⚙️ Functionalities
 
-- [ ] Users can login with him github account
+- [X] Users can login with him github account
 - [X] Users can start a cicle
 - [X] Users can stop the cicle
 - [X] Users have a experience bar where
@@ -92,10 +92,10 @@ In addition, it is good that you have a text editor to program like [VSCode](htt
 ```bash
 
 # Clone this repository 
-$ git clone git@github.com:arthrrc/moveitNextjs.git
+$ git clone git@github.com:arthrrc/moveit2.git
 
 # Access the project folder in your terminal / cmd
-$ cd moveitNextjs
+$ cd moveit2
 
 # Install the dependencies 
 $ npm install
