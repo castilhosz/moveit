@@ -17,14 +17,32 @@ export function Profile(props: ProfileProps) {
   const { level } = useContext(ChallengeContext)
 
   const { removeUsername } = useUsername();
-  
+
   function logout () {
     window.confirm('Você realmente gostaria de deslogar?') &&
     removeUsername()
     window.location.reload();
   }
 
-  return(
+  if (username=='guest') {
+    return(
+      <div 
+      className={styles.profileContainer}
+      >
+        <img src={'/avatar.png'} alt={'Visitante'}/>
+        <div>
+          <strong>Visitante</strong>
+          <button onClick={logout}>
+            <FiLogOut/>
+          </button>
+          <p>
+            <img src='icons/level.svg' alt='level'/>
+            Level {level}
+          </p>
+        </div>
+      </div>
+    )} else {
+    return(
       <div 
       className={styles.profileContainer}
       >
@@ -40,5 +58,6 @@ export function Profile(props: ProfileProps) {
           </p>
         </div>
       </div>
-  )
+    )
+  }
 }
