@@ -14,6 +14,14 @@ export default function Login() {
     setUsername(e.target.value);
   }
 
+  async function handleGuest (e) {
+    e.preventDefault();
+
+    await setUsername('guest');
+    usernameOnCookies();
+    Router.push('/');
+  }
+
   async function handleSubmit (e) {
     e.preventDefault();
 
@@ -57,6 +65,11 @@ export default function Login() {
             />
             <button type="submit">
               <img src="/icons/vector.svg" alt=""/>
+            </button>
+          </form>
+          <form onSubmit={handleGuest}>
+            <button className={styles.guest} type="submit" >
+              <p> Continue como visitante</p>
             </button>
           </form>
         </div>
