@@ -92,10 +92,10 @@ In addition, it is good that you have a text editor to program like [VSCode](htt
 ```bash
 
 # Clone this repository 
-$ git clone git@github.com:arthrrc/moveit2.git
+$ git clone git@github.com:artwesz/moveit.git
 
 # Access the project folder in your terminal / cmd
-$ cd moveit2
+$ cd moveit
 
 # Install the dependencies 
 $ npm install
@@ -117,4 +117,4 @@ $ npm run dev
 > If you have any questions, check out this [how to contribute to GitHub](./.github/CONTRIBUTING.md)
 
 
-Made with ❤️ by Arthur Castilhos 👋 [Contact me!](https://www.linkedin.com/in/arthrc/)
+Made with ❤️ by Arthur Castilhos 👋 [Contact me!](https://www.linkedin.com/in/artwesz/)
