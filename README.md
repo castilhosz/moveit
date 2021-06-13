@@ -9,20 +9,20 @@
 </h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/arthrrc/moveitNextjs?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/artcastilhos/moveit?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arthrrc/moveitNextjs">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arthrrc/moveit">
 
   <a href="https://www.twitter.com/arthrrc/">
-    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Farthrrc%2FmoveitNextjs">
+    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%artcastilhos%2Fmoveit">
   </a>
   
   <a href="https://github.com/arthrrc/moveit/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arthrrc/moveitNextjs">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/artcastilhos/moveit">
   </a>
     
    <a href="https://github.com/arthrrc/moveit/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/arthrrc/moveitNextjs?style=social">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/artcastilhos/moveit?style=social">
   </a>
   
  
@@ -92,7 +92,7 @@ In addition, it is good that you have a text editor to program like [VSCode](htt
 ```bash
 
 # Clone this repository 
-$ git clone git@github.com:artwesz/moveit.git
+$ git clone git@github.com:artcastilhos/moveit.git
 
 # Access the project folder in your terminal / cmd
 $ cd moveit
@@ -117,4 +117,4 @@ $ npm run dev
 > If you have any questions, check out this [how to contribute to GitHub](./.github/CONTRIBUTING.md)
 
 
-Made with ❤️ by Arthur Castilhos 👋 [Contact me!](https://www.linkedin.com/in/artwesz/)
+Made with ❤️ by Arthur Castilhos 👋 [Contact me!](https://www.linkedin.com/in/artcastilhos/)
